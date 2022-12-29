@@ -297,12 +297,13 @@ namespace GymManagerPro.View
             // hide all panels
             panelPlans.Visible = false;
             panelAllMembers.Visible = false;
-            panelMemberManager.Visible = true;
+            panelMemberManager.Visible = false;
             panelTrainers.Visible = false;
             panelAttedance.Visible = false;
             panelNewMemberWizard.Visible = false;
             panel.Visible = true;
         }
+
 
         private void DoNotAllowTrainerEdit()
         {
@@ -426,8 +427,8 @@ namespace GymManagerPro.View
 
             // set up autocomplete members search box in ribbon
             SetUpSearch();
-
-            SwitchToPanel(panelAllMembers);
+ 
+            SwitchToPanel(panelMemberManager);
             ribbonTabFind.Select();       //switch to Find ribbon tab
         }
 
@@ -466,7 +467,7 @@ namespace GymManagerPro.View
 
         private void btnViewAllMembers_Click(object sender, EventArgs e)
         {
-            SwitchToPanel(panelAllMembers);
+            SwitchToPanel(panelMemberManager);
         }
 
         private void btnViewCheckins_Click(object sender, EventArgs e)
