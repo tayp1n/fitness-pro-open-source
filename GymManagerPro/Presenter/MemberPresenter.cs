@@ -181,7 +181,6 @@ namespace GymManagerPro.Presenter
                 view.Street = member.Street;
                 view.Suburb = member.Suburb;
                 view.City = member.City;
-                view.PostalCode = member.PostalCode;
                 view.HomePhone = member.HomePhone;
                 view.CellPhone = member.CellPhone;
                 view.Email = member.Email;
@@ -258,7 +257,6 @@ namespace GymManagerPro.Presenter
                 Street = view.Street,
                 Suburb = view.Suburb,
                 City = view.City,
-                PostalCode = view.PostalCode,
                 HomePhone = view.HomePhone,
                 CellPhone = view.CellPhone,
                 Email = view.Email,

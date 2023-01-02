@@ -109,11 +109,7 @@ namespace GymManagerPro.View
             get { return txtCity.Text; }
             set { txtCity.Text = value; }
         }
-        public int PostalCode
-        {
-            get { return txtPostalCode.TextLength == 0 ? 0 : Int32.Parse(txtPostalCode.Text); }
-            set { txtPostalCode.Text = value.ToString(); }
-        }
+       
         string IMember.HomePhone
         {
             get { return txtHomePhone.Text; }
@@ -353,6 +349,34 @@ namespace GymManagerPro.View
         // sets controls in member manager as read only
         private void DoNotAllowMemberEdit()
         {
+            lblLastName.Visible = false;
+            lblFirstName.Visible = false;
+            lblDateOfBirth.Visible = false;
+            lblSex.Visible = false;
+            label11.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label4.Visible = false;
+            label6.Visible = false;
+            label12.Visible = false;
+            txtLastName.Visible = false;
+            txtFirstName.Visible = false;
+            txtDateOfBirth.Visible = false;
+            rbMale.Visible = false;
+            rbFemale.Visible = false;
+            txtOccupation.Visible = false;
+            txtStreet.Visible = false;
+            txtSuburb.Visible = false;
+            txtCity.Visible = false;
+            txtHomePhone.Visible = false;
+            txtCellPhone.Visible = false;
+            txtEmail.Visible = false;
+            label5.Visible = false;
+            label13.Visible = false;
+            txtCardNumber.Visible = false;
+            cbPersonalTrainer.Visible = false;
+
             txtLastName.ReadOnly = true;
             txtFirstName.ReadOnly = true;
             txtHomePhone.ReadOnly = true;
@@ -363,7 +387,6 @@ namespace GymManagerPro.View
             txtOccupation.ReadOnly = true;
             txtNotes.ReadOnly = true;
             txtEmail.ReadOnly = true;
-            txtPostalCode.ReadOnly = true;
             txtDateOfBirth.Enabled = false;
             txtCardNumber.Enabled = false;
             cbPersonalTrainer.Enabled = false;
@@ -380,6 +403,34 @@ namespace GymManagerPro.View
 
         private void AllowMemberEdit()
         {
+            lblLastName.Visible = true;
+            lblFirstName.Visible = true;
+            lblDateOfBirth.Visible = true;
+            lblSex.Visible = true;
+            label11.Visible = true;
+            label7.Visible = true;
+            label8.Visible = true;
+            label9.Visible = true;
+            label4.Visible = true;
+            label6.Visible = true;
+            label12.Visible = true;
+            txtLastName.Visible = true;
+            txtFirstName.Visible = true;
+            txtDateOfBirth.Visible = true;
+            rbMale.Visible = true;
+            rbFemale.Visible = true;
+            txtOccupation.Visible = true;
+            txtStreet.Visible = true;
+            txtSuburb.Visible = true;
+            txtCity.Visible = true;
+            txtHomePhone.Visible = true;
+            txtCellPhone.Visible = true;
+            txtEmail.Visible = true;
+            label5.Visible = true;
+            label13.Visible = true;
+            txtCardNumber.Visible = true;
+            cbPersonalTrainer.Visible = true;
+
             txtLastName.ReadOnly = false;
             txtFirstName.ReadOnly = false;
             txtHomePhone.ReadOnly = false;
@@ -390,7 +441,6 @@ namespace GymManagerPro.View
             txtOccupation.ReadOnly = false;
             txtEmail.ReadOnly = false;
             txtNotes.ReadOnly = false;
-            txtPostalCode.ReadOnly = false;
             txtDateOfBirth.Enabled = true;
             txtCardNumber.Enabled = true;
             cbPersonalTrainer.Enabled = true;
@@ -949,6 +999,11 @@ namespace GymManagerPro.View
         }
 
         private void membersDataGridViewX_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panelEx3_Click(object sender, EventArgs e)
         {
 
         }

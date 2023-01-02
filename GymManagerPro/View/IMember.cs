@@ -31,7 +31,6 @@ namespace GymManagerPro.View
         string Street { get; set; }
         string Suburb { get; set; }
         string City { get; set; }
-        int PostalCode { get; set; }
         string HomePhone { get; set; }
         string CellPhone { get; set; }
         string Email { get; set; }
